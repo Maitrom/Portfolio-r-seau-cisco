@@ -29,7 +29,7 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
   * Quitter le mode de configuration globale et enregister la configuration en utilisant respectivement ; 'end', 'copy running-config startup-config'
   * Vérification de la configuration de l'addresse ip en utilisant 'show ip address brief' et vérifier dans la table si la configuration est ok
 * **Résultat :** La table me confirme bien que l'addresse ip a bien été assignée.
-* **Preuve :** []
+* **Preuve :** <img width="755" height="674" alt="configuration-switch" src="https://github.com/user-attachments/assets/c02e5835-cfda-409f-8db9-c3a5a52de841" />
 
 ### Lab 2 : Analyse des Protocoles de Transfert (FTP & Telnet)
 * **Contexte :** Module de cybersécurité (TryHackMe) sur l'utilisation et la sécurisation des protocoles non chiffrés.
