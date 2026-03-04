@@ -64,8 +64,13 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
   * Configurer les lignes VTY
   * <img width="527" height="243" alt="R1-config-ssh" src="https://github.com/user-attachments/assets/de33a9dc-ee81-4c45-bba1-1ea901ba381d" />
   * <img width="743" height="256" alt="addressage-table" src="https://github.com/user-attachments/assets/1462feb0-29e3-4c6d-9979-021f85a68d0b" />
+  * <img width="606" height="151" alt="architecture" src="https://github.com/user-attachments/assets/0b15d88b-554a-4f4b-83f3-289e76f58ae0" />
 
 
-* **Résultat :** Après avoir tout configurer de sorte à ce que tout soit sécurisé, PCA n'est pas capable de se connecter à PCB en utilisant SSH
+
+* **Résultat :**
+* Connectivité validée entre PCA et PCB confirmée par les tests de ping réussis entre ceux-ci.
+* Validation du message légal ; la bannière MOTD s'affiche correctement dès la tentative de connexion.
+
 
 
