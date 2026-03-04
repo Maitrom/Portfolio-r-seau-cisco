@@ -44,7 +44,7 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
  <img width="893" height="545" alt="configurer-ssh" src="https://github.com/user-attachments/assets/742e1a54-3e26-4030-abeb-6011872a208e" />
 
 
-### Lab 4 : Construire un réseau de commutateurs et de routeurs
+### Lab 4 : Construire un réseau de commutateurs et de routeurs en utilisant la théorie vue précédemment
 * **Contexte :**  Votre travail consiste à connecter les appareils, à mettre en œuvre une configuration de base et à vérifier la connectivité. Après avoir vérifié la connectivité du réseau, vous utiliserez les commandes IOS pour récupérer des informations sur les périphériques afin de répondre aux questions concernant votre équipement réseau. Vous allez également configurer le routeur pour un accès à distance sécurisé.
 * **Actions réalisées :**
   *Connecter R1 G0/0/1 à n'importe quel port sur S1 avec un cable droit en cuivre
@@ -62,10 +62,10 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
   * Sur R1, configurer le nom de domaine academy.net et générer des clés RSA avec une longueur de clé de 1024.
   * Créer un utilisateur avec SSHuser comme nom d'uilisateur et cisco comme mot de passe
   * Configurer les lignes VTY
-  * <img width="527" height="243" alt="R1-config-ssh" src="https://github.com/user-attachments/assets/de33a9dc-ee81-4c45-bba1-1ea901ba381d" /> 
+  * <img width="527" height="243" alt="R1-config-ssh" src="https://github.com/user-attachments/assets/de33a9dc-ee81-4c45-bba1-1ea901ba381d" />
+  * <img width="743" height="256" alt="addressage-table" src="https://github.com/user-attachments/assets/1462feb0-29e3-4c6d-9979-021f85a68d0b" />
 
 
-* **Résultat :** Après avoir utiliser 'show startup-config' j'ai pu confirmer que la configuration a bien été prise en comtpe.
-*  **Preuve :** 
+* **Résultat :** Après avoir tout configurer de sorte à ce que tout soit sécurisé, PCA n'est pas capable de se connecter à PCB en utilisant SSH
 
 
