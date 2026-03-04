@@ -27,7 +27,7 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
   * Configurer et vérifier la configuration initiale du routeur en utilisant les commandes ; 'hostname R1', 'enable secret itsasecret', 'line console 0 - password letmein - login - exit'
   * Chiffrer les mots de passe en utilisant la commande 'service password-encryption'
   * Configurer un message légal en utilisant '# banner motd #L'accès non autorisé est strictement interdit#'
-* **Résultat :** Après avoir utiliser 'show startup-config' j'ai pu confirmer que la configuration a bien été prise en comtpe.
+* **Résultat :** Après avoir utilisé 'show startup-config' j'ai pu confirmer que la configuration a bien été prise en comtpe.
 *  **Preuve :** <img width="1052" height="500" alt="configuration-d-un-routeur" src="https://github.com/user-attachments/assets/a45d49ac-9990-462f-9737-764debb02004" />
 
 
