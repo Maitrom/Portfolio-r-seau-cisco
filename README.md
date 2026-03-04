@@ -5,7 +5,6 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 **Objectif :** Apprendre les éléments essentiels des périphériques réseau et la façon de les configurer pour ensuite pouvoir être capable de créer un petit réseau cisco
 
 ---
----
 
 ##  Journal des Laboratoires Pratiques
 
@@ -32,10 +31,18 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 *  **Preuve :** <img width="1052" height="500" alt="configuration-d-un-routeur" src="https://github.com/user-attachments/assets/a45d49ac-9990-462f-9737-764debb02004" />
 
 
-### Lab 3 : [Ajoute ton prochain gros projet ici]
-* **Contexte :** (Ex: Configuration du routage entre deux réseaux distincts).
+### Lab 3 : Configurer SSH
+* **Contexte :** Sécurisation d'un commutateur distant avec le cryptage fr mot de passe SSH.
 * **Actions réalisées :** ...
-* **Résultat :** ...
+* Etablir une connexion telnet vers S1 en utilisant'telnet 10.10.10.2'
+* Enregistrer la configuration actuelle de sorte que toutes les éventuelles erruers commises soient annulées en basculant l'interrupter de S1
+* Basculer dans le mode de configuration global pour ensuite chiffrer les mots de passe ; 'configure terminal' - 'service password-encryption'
+* Définir le nom de domaine sur netacad.pka
+* Générer les clés RSA en spécifiant une longueur de 1024 bits ; 'crypto key generate rsa'
+* Créer un utilisateur SSH et reconfigurer les lignes VTY pour un accès SSH uniquement ; 'line vty 0 15' - 'login local' - 'transport input ssh' - 'no password cisco'
+* **Résultat :** Après avoir quitter la session Telnet, il m'était impossible de m'y reconnecter de cette manière. J'ai bien pu ne m'y reconnecter que grâce à la commande 'ssh -l administrator 10.10.10.2'
+* <img width="893" height="545" alt="configurer-ssh" src="https://github.com/user-attachments/assets/742e1a54-3e26-4030-abeb-6011872a208e" />
+
 
 ---
 
