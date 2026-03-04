@@ -12,11 +12,11 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 * **Contexte :** Mise en place d'un nouveau switch dans un environnement d'entreprise.
 * **Actions réalisées :**
   * Utilisation de la CLI du commutateur
-  * Passer en mode privilégier en utilisant la commande 'enable' puis 'configure terminal' pour passer en configuration globale.
+  * Passer en mode privilégié en utilisant la commande 'enable' puis 'configure terminal' pour passer en configuration globale.
   * Configuration d'un nom d'hôte en utilisant la command 'hostname _nom d'hôte_
   * Configuration d'une addresse ip pour la SVI en utilisant les commandes ; 'interface vlan 1', 'ip address _addresse ip assignée_', 'no shutdown'
   * Quitter le mode de configuration globale et enregister la configuration en utilisant respectivement ; 'end', 'copy running-config startup-config'
-  * Vérification de la configuration de l'addresse ip en utilisant 'show ip address brief' et vérifier dans la table si la configuration est ok
+  * Vérification de la configuration de l'addresse ip en utilisant 'show ip interface brief' et vérifier dans la table si la configuration est ok
 * **Résultat :** La table me confirme bien que l'addresse ip a bien été assignée.
 * **Preuve :** <img width="755" height="674" alt="configuration-switch" src="https://github.com/user-attachments/assets/c02e5835-cfda-409f-8db9-c3a5a52de841" />
 
@@ -25,31 +25,31 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 * **Actions réalisées :**
   * Accéder au mode privilégié et examiner la configuration actuelle en entrant les commandes ; 'enable', 'show running-config'
   * Configurer et vérifier la configuration initiale du routeur en utilisant les commandes ; 'hostname R1', 'enable secret itsasecret', 'line console 0 - password letmein - login - exit'
-  * Encrypter les mots de passe en utilisant la commande 'service password-encryption'
-  * Configurer un message légal en utilisant '# banner motd #L'accès non authorisé est strictement interdit#'
+  * Chiffrer les mots de passe en utilisant la commande 'service password-encryption'
+  * Configurer un message légal en utilisant '# banner motd #L'accès non autorisé est strictement interdit#'
 * **Résultat :** Après avoir utiliser 'show startup-config' j'ai pu confirmer que la configuration a bien été prise en comtpe.
 *  **Preuve :** <img width="1052" height="500" alt="configuration-d-un-routeur" src="https://github.com/user-attachments/assets/a45d49ac-9990-462f-9737-764debb02004" />
 
 
 ### Lab 3 : Configurer SSH
-* **Contexte :** Sécurisation d'un commutateur distant avec le cryptage fr mot de passe SSH.
+* **Contexte :** Sécurisation d'un commutateur distant avec le cryptage du mot de passe SSH.
 * **Actions réalisées :** ...
 * Etablir une connexion telnet vers S1 en utilisant'telnet 10.10.10.2'
-* Enregistrer la configuration actuelle de sorte que toutes les éventuelles erruers commises soient annulées en basculant l'interrupter de S1
+* Enregistrer la configuration actuelle de sorte que toutes les éventuelles erreurs commises soient annulées en basculant l'interrupter de S1
 * Basculer dans le mode de configuration global pour ensuite chiffrer les mots de passe ; 'configure terminal' - 'service password-encryption'
-* Définir le nom de domaine sur netacad.pka
+* Définir le nom de domaine sur netacad.pka ; 'ip domain-name netacad.pka'
 * Générer les clés RSA en spécifiant une longueur de 1024 bits ; 'crypto key generate rsa'
 * Créer un utilisateur SSH et reconfigurer les lignes VTY pour un accès SSH uniquement ; 'line vty 0 15' - 'login local' - 'transport input ssh' - 'no password cisco'
 * **Résultat :** Après avoir quitter la session Telnet, il m'était impossible de m'y reconnecter de cette manière. J'ai bien pu ne m'y reconnecter que grâce à la commande 'ssh -l administrator 10.10.10.2'
  <img width="893" height="545" alt="configurer-ssh" src="https://github.com/user-attachments/assets/742e1a54-3e26-4030-abeb-6011872a208e" />
 
 
-### Lab 4 : Configuration de base d'un routeur
-* **Contexte :** Effectuer les tâches de configuration de base d'un router.
+### Lab 4 : Construire un réseau de commutateurs et de routeurs
+* **Contexte :**  Votre travail consiste à connecter les appareils, à mettre en œuvre une configuration de base et à vérifier la connectivité. Après avoir vérifié la connectivité du réseau, vous utiliserez les commandes IOS pour récupérer des informations sur les périphériques afin de répondre aux questions concernant votre équipement réseau. Vous allez également configurer le routeur pour un accès à distance sécurisé.
 * **Actions réalisées :**
   * Accédez au mode privilégié et examiner la configuration actuelle en entrant les commandes ; 'enable', 'show running-config'
   * Configurer et vérifier la configuration initiale du routeur en utilisant les commandes ; 'hostname R1', 'enable secret itsasecret', 'line console 0 - password letmein - login - exit'
-  * Encrypter les mots de passe en utilisant la commande 'service password-encryption'
+  * Chiffrer les mots de passe en utilisant la commande 'service password-encryption'
   * Configurer un message légal en utilisant '# banner motd #L'accès non authorisé est strictement interdit#'
 * **Résultat :** Après avoir utiliser 'show startup-config' j'ai pu confirmer que la configuration a bien été prise en comtpe.
 *  **Preuve :** <img width="1052" height="500" alt="configuration-d-un-routeur" src="https://github.com/user-attachments/assets/a45d49ac-9990-462f-9737-764debb02004" />
