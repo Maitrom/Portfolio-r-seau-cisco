@@ -23,7 +23,7 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 ### Lab 2 : Configuration de base d'un routeur
 * **Contexte :** Effectuer les tâches de configuration de base d'un router.
 * **Actions réalisées :**
-  * Accédez au mode privilégié et examiner la configuration actuelle en entrant les commandes ; 'enable', 'show running-config'
+  * Accéder au mode privilégié et examiner la configuration actuelle en entrant les commandes ; 'enable', 'show running-config'
   * Configurer et vérifier la configuration initiale du routeur en utilisant les commandes ; 'hostname R1', 'enable secret itsasecret', 'line console 0 - password letmein - login - exit'
   * Encrypter les mots de passe en utilisant la commande 'service password-encryption'
   * Configurer un message légal en utilisant '# banner motd #L'accès non authorisé est strictement interdit#'
@@ -41,6 +41,17 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 * Générer les clés RSA en spécifiant une longueur de 1024 bits ; 'crypto key generate rsa'
 * Créer un utilisateur SSH et reconfigurer les lignes VTY pour un accès SSH uniquement ; 'line vty 0 15' - 'login local' - 'transport input ssh' - 'no password cisco'
 * **Résultat :** Après avoir quitter la session Telnet, il m'était impossible de m'y reconnecter de cette manière. J'ai bien pu ne m'y reconnecter que grâce à la commande 'ssh -l administrator 10.10.10.2'
-* <img width="893" height="545" alt="configurer-ssh" src="https://github.com/user-attachments/assets/742e1a54-3e26-4030-abeb-6011872a208e" />
+ <img width="893" height="545" alt="configurer-ssh" src="https://github.com/user-attachments/assets/742e1a54-3e26-4030-abeb-6011872a208e" />
+
+
+### Lab 4 : Configuration de base d'un routeur
+* **Contexte :** Effectuer les tâches de configuration de base d'un router.
+* **Actions réalisées :**
+  * Accédez au mode privilégié et examiner la configuration actuelle en entrant les commandes ; 'enable', 'show running-config'
+  * Configurer et vérifier la configuration initiale du routeur en utilisant les commandes ; 'hostname R1', 'enable secret itsasecret', 'line console 0 - password letmein - login - exit'
+  * Encrypter les mots de passe en utilisant la commande 'service password-encryption'
+  * Configurer un message légal en utilisant '# banner motd #L'accès non authorisé est strictement interdit#'
+* **Résultat :** Après avoir utiliser 'show startup-config' j'ai pu confirmer que la configuration a bien été prise en comtpe.
+*  **Preuve :** <img width="1052" height="500" alt="configuration-d-un-routeur" src="https://github.com/user-attachments/assets/a45d49ac-9990-462f-9737-764debb02004" />
 
 
