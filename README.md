@@ -40,7 +40,7 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 * Définir le nom de domaine sur netacad.pka ; 'ip domain-name netacad.pka'
 * Générer les clés RSA en spécifiant une longueur de 1024 bits ; 'crypto key generate rsa'
 * Créer un utilisateur SSH et reconfigurer les lignes VTY pour un accès SSH uniquement ; 'line vty 0 15' - 'login local' - 'transport input ssh' - 'no password cisco'
-* **Résultat :** Après avoir quitter la session Telnet, il m'était impossible de m'y reconnecter de cette manière. J'ai bien pu ne m'y reconnecter que grâce à la commande 'ssh -l administrator 10.10.10.2'
+* **Résultat :** Après avoir quitté la session Telnet, il m'était impossible de m'y reconnecter de cette manière. J'ai bien pu ne m'y reconnecter que grâce à la commande 'ssh -l administrator 10.10.10.2'
  <img width="893" height="545" alt="configurer-ssh" src="https://github.com/user-attachments/assets/742e1a54-3e26-4030-abeb-6011872a208e" />
 
 
@@ -50,7 +50,7 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
   *Connecter R1 G0/0/1 à n'importe quel port sur S1 avec un cable droit en cuivre
   * Connecter PCa à n'importe quel port sur S1
   * Connecter PCB à R1 G0/0/0
-  * Configurer les paramètres de l'addresse IPv4, du masque de sous-réseau et de la passerelle par défaut PCA et ud PCB en utilisant la table d'addressage
+  * Configurer les paramètres de l'adresse IPv4, du masque de sous-réseau et de la passerelle par défaut PCA et du PCB en utilisant la table d'addressage
   * On utilise la commande 'ping' entre les deux PC mais celle-ci échoue puisque le routeur n'a pas encore été configuré
   * Pour R1, attribuer un nom d'hôte en fonction de la table d'adressage, attribuer class comme mot de passe crypté EXEC privilégié, attribuer cisco comme mot de passe console. Chiffrer les mots de passe
   * <img width="454" height="166" alt="Configuration-routeur-R1" src="https://github.com/user-attachments/assets/8e4d9770-594b-4c15-931a-1e67aaa009be" />
