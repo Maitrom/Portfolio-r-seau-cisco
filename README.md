@@ -47,11 +47,17 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 ### Lab 4 : Construire un réseau de commutateurs et de routeurs
 * **Contexte :**  Votre travail consiste à connecter les appareils, à mettre en œuvre une configuration de base et à vérifier la connectivité. Après avoir vérifié la connectivité du réseau, vous utiliserez les commandes IOS pour récupérer des informations sur les périphériques afin de répondre aux questions concernant votre équipement réseau. Vous allez également configurer le routeur pour un accès à distance sécurisé.
 * **Actions réalisées :**
-  * Accédez au mode privilégié et examiner la configuration actuelle en entrant les commandes ; 'enable', 'show running-config'
-  * Configurer et vérifier la configuration initiale du routeur en utilisant les commandes ; 'hostname R1', 'enable secret itsasecret', 'line console 0 - password letmein - login - exit'
-  * Chiffrer les mots de passe en utilisant la commande 'service password-encryption'
-  * Configurer un message légal en utilisant '# banner motd #L'accès non authorisé est strictement interdit#'
+  *Connecter R1 G0/0/1 à n'importe quel port sur S1 avec un cable droit en cuivre
+  * Connecter PCa à n'importe quel port sur S1
+  * Connecter PCB à R1 G0/0/0
+  * Configurer les paramètres de l'addresse IPv4, du masque de sous-réseau et de la passerelle par défaut PCA et ud PCB en utilisant la table d'addressage
+  * On utilise la commande 'ping' entre les deux PC mais celle-ci échoue puisque le routeur n'a pas encore été configuré
+  * Pour R1, attribuer un nom d'hôte en fonction de la table d'adressage, attribuer class comme mot de passe crypté EXEC privilégié, attribuer cisco comme mot de passe console. Chiffrer les mots de passe
+  * <img width="454" height="166" alt="Configuration-routeur-R1" src="https://github.com/user-attachments/assets/8e4d9770-594b-4c15-931a-1e67aaa009be" />
+  * Pour G0/0/0 et G0/0/1, configurer l'adressage IP selon la table et activez l'interface
+  * <img width="696" height="247" alt="configurer-G01" src="https://github.com/user-attachments/assets/3b2207f8-fc09-4c19-a2c4-be2270255985" />
+
 * **Résultat :** Après avoir utiliser 'show startup-config' j'ai pu confirmer que la configuration a bien été prise en comtpe.
-*  **Preuve :** <img width="1052" height="500" alt="configuration-d-un-routeur" src="https://github.com/user-attachments/assets/a45d49ac-9990-462f-9737-764debb02004" />
+*  **Preuve :** 
 
 
