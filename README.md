@@ -31,13 +31,16 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 * **Résultat :** La table me confirme bien que l'addresse ip a bien été assignée.
 * **Preuve :** <img width="755" height="674" alt="configuration-switch" src="https://github.com/user-attachments/assets/c02e5835-cfda-409f-8db9-c3a5a52de841" />
 
-### Lab 2 : Analyse des Protocoles de Transfert (FTP & Telnet)
-* **Contexte :** Module de cybersécurité (TryHackMe) sur l'utilisation et la sécurisation des protocoles non chiffrés.
+### Lab 2 : Configuration de base d'un routeur
+* **Contexte :** Effectuer les tâches de configuration de base d'un router.
 * **Actions réalisées :**
-  * Interception et analyse de trafic Telnet pour démontrer la vulnérabilité des mots de passe en clair.
-  * Utilisation du protocole FTP en ligne de commande pour la récupération de fichiers.
-  * **Analyse technique :** Différenciation et application des modes de transfert FTP (`ASCII` vs `Binary`). J'ai documenté l'importance du mode ASCII pour la traduction correcte des sauts de ligne (LF vs CR+LF) entre les environnements Linux et Windows, garantissant ainsi l'intégrité des scripts récupérés.
-* **Résultat :** Maîtrise des interactions client-serveur via des terminaux bruts.
+  * Accédez au mode privilégié et examiner la configuration actuelle en entrant les commandes ; 'enable', 'show running-config'
+  * Configurer et vérifier la configuration initiale du routeur en utilisant les commandes ; 'hostname R1', 'enable secret itsasecret', 'line console 0 - password letmein - login - exit'
+  * Encrypter les mots de passe en utilisant la commande 'service password-encryption'
+  * Configurer un message légal en utilisant '# banner motd #L'accès non authorisé est strictement interdit#'
+* **Résultat :** Après avoir utiliser 'show startup-config' j'ai pu confirmer que la configuration a bien été prise en comtpe.
+*  **Preuve :** <img width="1052" height="500" alt="configuration-d-un-routeur" src="https://github.com/user-attachments/assets/a45d49ac-9990-462f-9737-764debb02004" />
+
 
 ### Lab 3 : [Ajoute ton prochain gros projet ici]
 * **Contexte :** (Ex: Configuration du routage entre deux réseaux distincts).
