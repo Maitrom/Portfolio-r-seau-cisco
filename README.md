@@ -5,16 +5,6 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 **Objectif :** Apprendre les éléments essentiels des périphériques réseau et la façon de les configurer pour ensuite pouvoir être capable de créer un petit réseau cisco
 
 ---
-
-##  Compétences Techniques Acquises
-
-| Catégorie | Compétences & Technologies |
-| :--- | :--- |
-| **Fondamentaux** | Modèles OSI & TCP/IP, Adressage IPv4/IPv6, Subnetting |
-| **Équipements** | Commutateurs (Switches) Cisco (Séries 2960, 4000) |
-| **Protocoles** | 
-| **Outils** | Cisco Packet Tracer|
-
 ---
 
 ##  Journal des Laboratoires Pratiques
