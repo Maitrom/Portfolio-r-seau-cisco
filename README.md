@@ -56,6 +56,10 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
   * <img width="454" height="166" alt="Configuration-routeur-R1" src="https://github.com/user-attachments/assets/8e4d9770-594b-4c15-931a-1e67aaa009be" />
   * Pour G0/0/0 et G0/0/1, configurer l'adressage IP selon la table et activez l'interface
   * <img width="696" height="247" alt="configurer-G01" src="https://github.com/user-attachments/assets/3b2207f8-fc09-4c19-a2c4-be2270255985" />
+  * Pour S1, on attribue un nom d'hôte, un mot de passe crypté EXEC privilégié, un mot de passe console, et utiliser la commande 'service password-encryption' pour chiffrer les mots de passe
+  * Pour VLAN 1, on configure l'addressage IP selon la table, on configure la passerelle par défaut et on enregistre la configuration courante de le fichier de démarrage.
+  * <img width="633" height="431" alt="configurer-S1" src="https://github.com/user-attachments/assets/d9436dc4-d647-4d74-8a70-99b8ed879ac6" />
+  * 
 
 * **Résultat :** Après avoir utiliser 'show startup-config' j'ai pu confirmer que la configuration a bien été prise en comtpe.
 *  **Preuve :** 
