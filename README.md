@@ -59,7 +59,11 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
   * Pour S1, on attribue un nom d'hôte, un mot de passe crypté EXEC privilégié, un mot de passe console, et utiliser la commande 'service password-encryption' pour chiffrer les mots de passe
   * Pour VLAN 1, on configure l'addressage IP selon la table, on configure la passerelle par défaut et on enregistre la configuration courante de le fichier de démarrage.
   * <img width="633" height="431" alt="configurer-S1" src="https://github.com/user-attachments/assets/d9436dc4-d647-4d74-8a70-99b8ed879ac6" />
-  * 
+  * Sur R1, configurer le nom de domaine academy.net et générer des clés RSA avec une longueur de clé de 1024.
+  * Créer un utilisateur avec SSHuser comme nom d'uilisateur et cisco comme mot de passe
+  * Configurer les lignes VTY
+  * <img width="527" height="243" alt="R1-config-ssh" src="https://github.com/user-attachments/assets/de33a9dc-ee81-4c45-bba1-1ea901ba381d" /> 
+
 
 * **Résultat :** Après avoir utiliser 'show startup-config' j'ai pu confirmer que la configuration a bien été prise en comtpe.
 *  **Preuve :** 
