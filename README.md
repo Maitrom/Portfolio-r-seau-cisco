@@ -71,6 +71,7 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 * **Résultat :**
 * Connectivité validée entre PCA et PCB confirmée par les tests de ping réussis entre ceux-ci.
 * Validation du message légal ; la bannière MOTD s'affiche correctement dès la tentative de connexion.
+<img width="271" height="146" alt="connexionssh" src="https://github.com/user-attachments/assets/ed2510f2-dcdc-46f8-871f-1a1702a5170b" />
 
 
 
