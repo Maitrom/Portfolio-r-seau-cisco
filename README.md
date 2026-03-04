@@ -44,10 +44,3 @@ Ce dépôt documente mon apprentissage pratique issu du cours **Cisco Networking
 * <img width="893" height="545" alt="configurer-ssh" src="https://github.com/user-attachments/assets/742e1a54-3e26-4030-abeb-6011872a208e" />
 
 
----
-
-##  Ma Démarche d'Apprentissage
-Je ne me contente pas de suivre des tutoriels : je cherche à comprendre le *pourquoi*. Par exemple, comprendre comment les paquets sont formatés (comme les fins de ligne en FTP) me permet d'anticiper les erreurs de configuration sur des infrastructures hétérogènes.
-
----
-*N'hésitez pas à me contacter via [Mon LinkedIn](Lien_vers_ton_profil) pour échanger sur ces sujets !*
